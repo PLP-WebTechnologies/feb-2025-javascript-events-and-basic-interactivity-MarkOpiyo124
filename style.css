@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#hover-text:hover {
+  color: teal;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.tab-buttons {
+  margin-top: 1rem;
+}
+
+.tab-content {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+#email-feedback,
+#pass-feedback {
+  color: red;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+input:valid {
+  border: 2px solid green;
+}
