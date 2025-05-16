@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to the JS Playground!</h1>
+  </header>
+
+  <section class="interactions">
+    <button id="magic-btn">Click Me!</button>
+    <p id="hover-text">Hover over me!</p>
+    <input type="text" id="keypress-box" placeholder="Type something..." />
+    <button id="secret-btn">Double Click Me</button>
+  </section>
+
+  <section class="tabs">
+    <div class="tab-buttons">
+      <button class="tab-link" data-tab="tab1">Tab 1</button>
+      <button class="tab-link" data-tab="tab2">Tab 2</button>
+    </div>
+    <div class="tab-content" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2" style="display: none;">Content for Tab 2</div>
+  </section>
+
+  <section class="gallery">
+    <img id="slider" src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery" />
+    <button onclick="nextImage()">Next</button>
+  </section>
+
+  <section class="form-section">
+    <h2>📝 Register</h2>
+    <form id="register-form">
+      <label>Email: <input type="email" id="email" required /></label>
+      <span id="email-feedback"></span><br>
+
+      <label>Password: <input type="password" id="password" required /></label>
+      <span id="pass-feedback"></span><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
